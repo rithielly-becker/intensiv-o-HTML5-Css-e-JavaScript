@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(27, 27, 46);
+    /*rgb(36, 36, 95);*/
+    color: beige;
+    padding: 14px;
+    /*define o tamanho do cabeçalho da pagina*/
+}
+
+header nav {
+    text-align: right;
+    /*para alinhas os links na direita da pagina*/
+}
+
+.container {
+    display: block;
+    margin: 8px auto;
+}
+
+header h1 {
+    margin: o;
+    font-size: 24px;
+}
+
+nav li {
+    display: inline;
+    font-size: 20px;
+    padding: 0 12px
+}
+
+nav li a:hover {
+    color: #fff;
+    /* Muda a cor dos links ao passar o mouse */
+}
+
+nav li a {
+    text-decoration: none;
+    color: beige;
+}
