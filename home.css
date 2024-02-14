@@ -8,7 +8,7 @@ header {
     background-color: rgb(27, 27, 46);
     /*rgb(36, 36, 95);*/
     color: beige;
-    padding: 14px;
+    padding: 12px;
     /*define o tamanho do cabeçalho da pagina*/
 }
 
@@ -40,5 +40,11 @@ nav li a:hover {
 
 nav li a {
     text-decoration: none;
+    color: beige;
+}
+
+footer{
+    background-color: rgb(27, 27, 46);
+    padding: 14px;
     color: beige;
 }
