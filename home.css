@@ -48,3 +48,30 @@ footer{
     padding: 14px;
     color: beige;
 }
+
+img{
+    width: 50px;
+    height: 50px;
+} 
+
+#contact ul li{
+    text-decoration: none;
+    display: inline;
+    padding: 12px;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o contêiner em duas colunas de largura igual */
+    gap: 20px; /* Adiciona um espaço entre as colunas */
+}
+
+form {
+    grid-column: 1 / 2; /* Ocupa a primeira coluna */
+}
+
+.social-links {
+    grid-column: 2 / 3; /* Ocupa a segunda coluna */
+}
+
+
