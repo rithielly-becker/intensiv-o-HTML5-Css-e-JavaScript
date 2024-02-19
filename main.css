@@ -5,6 +5,7 @@
 body {
     width: 100%;
     height: 100%;
+    /*background-image: url("imagens/GitHub-Logo.png");*/
 }
 
 input {
@@ -16,6 +17,12 @@ input {
     border-radius: 4PX;
     border: normal;
     cursor: pointer;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(27, 27, 46);
+    color: beige;
 }
 
 form {
@@ -30,3 +37,5 @@ h3 {
     font-size: 22px;
     font-weight: bolder;
 }
+
+
