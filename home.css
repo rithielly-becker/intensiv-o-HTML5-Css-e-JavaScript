@@ -19,16 +19,37 @@ header {
 #about h1{
     font-size: 24px;
     margin-left: 8px;
+    font-weight: lighter;
 }
 
 #tec h2{
     font-size: 24px;
     margin-left: 8px;
+    font-weight: lighter;
 }
+
+#tec img{
+    width: 50px;
+    height: 50px;
+    margin-left: 8px;
+} 
 
 #contact h3{
     font-size: 24px;
     margin-left: 8px;
+    font-weight: lighter;
+}
+
+#projects h3{
+    font-size: 24px;
+    margin-left: 8px;
+    font-weight: lighter;
+}
+
+form h3{
+    font-size: 24px;
+    margin-left: 8px;
+    font-weight: lighter;
 }
 
 p {
@@ -41,11 +62,6 @@ header nav {
     text-align: right;
     /*para alinhas os links na direita da pagina*/
 }
-
-/*.container {
-    display: block;
-    margin: 8px auto;
-}*/
 
 nav li {
     display: inline;
@@ -75,25 +91,6 @@ img{
     padding: 12px;
 }
 
-form h3{
-    font-size: 24px;
-}
-
-/*ul .conteiner {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide o contêiner em duas colunas de largura igual 
-    gap: 20px; /* Adiciona um espaço entre as colunas 
-}
-
-form {
-    grid-column: 1 / 2; /* Ocupa a primeira coluna 
-}
-
-.social-links {
-    grid-column: 2 / 3; /* Ocupa a segunda coluna 
-}
-*/
-
 input,
 textarea{
     border-radius: 10px;
@@ -102,14 +99,6 @@ textarea{
     margin: 10px;
     cursor: pointer;
 }
-
-/*input{
-    background-color: aqua;
-}
-/*
-input button:hover{
-    background-color: blue;
-}*/
 
 input[type="submit"]:hover {
     background-color: rgb(27, 27, 46);
