@@ -9,11 +9,9 @@ body {
 }
 
 header {
-    background-color: rgb(27, 27, 46);
-    /*rgb(36, 36, 95);*/
+    background-color: rgb(27, 27, 46); 
     color: beige;
     padding: 12px;
-    /*define o tamanho do cabeçalho da pagina*/
 }
 
 #about h1{
