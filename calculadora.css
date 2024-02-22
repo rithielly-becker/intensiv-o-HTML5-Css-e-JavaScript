@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fundo {
+    background-image: linear-gradient(45deg, black, rgb(20, 220, 120));
+    /*The linear-gradient() function creates an image consisting of a progressive transition between two or more colors along a straight line. In your case, it creates a gradient that transitions from black to crimson at a 45-degree angle.*/
+    height: 100vh;
+    /*A unidade vh (viewport height) é uma unidade de medida relativa à altura da janela do navegador. 100vh significa 100% da altura da janela do navegador, 50vh significa 50%, e assim por diante. Esta propriedade é especialmente útil para criar layouts responsivos, onde você deseja que um elemento ocupe toda a altura da janela do navegador, independentemente do tamanho da tela do dispositivo.*/
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.calculadora {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.6);
+    top: 50%;
+    /*alinha a classe na posição escolhida*/
+    left: 50%;
+    /*alinha a classe na posição escolhida*/
+    transform: translate(-50%,-50%);
+    /*usado para mover a classe*/
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.botao {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(31,31,31);
+    color: #fff;
+    
+    margin: 3px;
+}
+
+.botao:hover{
+    background-color: black;
+}
