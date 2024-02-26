@@ -83,6 +83,10 @@ img{
     padding: auto;
 } 
 
+#program li a{
+    text-decoration: none;
+}
+
 #contact ul li{
     text-decoration: none;
     display: inline;
