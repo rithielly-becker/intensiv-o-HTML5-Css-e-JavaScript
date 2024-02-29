@@ -30,12 +30,26 @@ function back() {
 
 function calcular() {
     var resultado = document.getElementById('resultado').innerHTML;
-    if(resultado)
-    {
+    if (resultado) {
         document.getElementById('resultado').innerHTML = eval(resultado);
     }
-    else
-    {
+    else {
         document.getElementById('resultado').innerHTML = "Nada"
+    }
+}
+
+const localStorageaKey = 'to-do-list-gn'
+
+function newTask() {
+
+    let input = document.getElementById('input-new-task')
+
+    //validação
+
+    if (!input.value) {
+        alert('Digite algo para incerir em sua lista')
+    }
+    else {
+        let values = JSON.parse(localStorage.getItem(''))
     }
 }
