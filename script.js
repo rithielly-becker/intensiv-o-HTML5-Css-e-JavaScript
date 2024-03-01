@@ -38,7 +38,7 @@ function calcular() {
     }
 }
 
-const localStorageaKey = 'to-do-list-gn'
+const localStorageKey = 'to-do-list-gn'
 
 function newTask() {
 
@@ -50,6 +50,21 @@ function newTask() {
         alert('Digite algo para incerir em sua lista')
     }
     else {
-        let values = JSON.parse(localStorage.getItem(''))
+        let values = JSON.parse(localStorage.getItem('') || "[]")
+        values.push({
+            name: input.value
+        })
+        localStorage.setItem(localStorageKey, JSON.stringify(values))
+        showValues()
+    }
+}
+
+function showValues() {
+
+    let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
+    let list = document.getElementById('to-do-list')
+    list.innerHTML = ''
+    for (let i = 0; i < values.length; i++) {
+        list.innerHTML += `<li>${values[i]['name']}</li>`
     }
 }
