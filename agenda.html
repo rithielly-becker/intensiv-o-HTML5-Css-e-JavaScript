@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda telefonica</title>
+    <link rel="stylesheet" href="agenda.css">
+</head>
+
+<body>
+    <form>
+        <input type="text" id="nome" placeholder="Digite o nome:" required>
+        <input type="number" id="numero" placeholder="Digite o número" required oninput="limitarTamanho(this, 11)"> <!--oninput="limitarTamanho(this, 11)" e usado no input type number assim como o maxlength e usado no input type text-->
+        <button type="button" onclick="adicionaLinha()">Salvar</button>
+    </form>
+
+    <table cellspacing="1">
+        <thead>
+            <tr>
+                <td>
+                    Nome
+                </td>
+                <td>
+                    Número
+                </td>
+            </tr>
+        </thead>
+        <tbody id="tabela-corpo">
+            <tr>
+                <td>
+                    ---
+                </td>
+                <td>
+                    ---
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" id="resultado">Total de contatos: </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+<script src="agenda.js"></script>
+</html>

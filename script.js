@@ -1,3 +1,4 @@
+/*inicio do login*/
 function logar() {
 
     var login = document.getElementById('login').value;
@@ -11,7 +12,9 @@ function logar() {
     }
 
 }
+/*fim do login*/
 
+/*inicio da calculadora*/
 function insert(num) {
     var numero = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = numero + num;
@@ -22,7 +25,6 @@ function clean() {
 }
 
 function back() {
-
 
     var resultado = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length - 1)
@@ -37,7 +39,9 @@ function calcular() {
         document.getElementById('resultado').innerHTML = "Nada"
     }
 }
+/*fim da calculadora*/
 
+/*começo to-do-list*/
 const localStorageKey = 'to-do-list-gn'
 
 function validateIfExistsNewTask() {
@@ -90,3 +94,4 @@ function removeItem(data) {
 }
 
 showValues()
+/*fim to-do-list*/
